@@ -18,6 +18,7 @@ function Navbar() {
   return (
     <div>
       <nav className={nav ? "nav active" : "nav"}>
+        <div className="nav-container">
         <Link to="/" className="logo">
           <img className="img1" src={logo} alt="" />
         </Link>
@@ -26,7 +27,7 @@ function Navbar() {
           <span className="nav-icon"></span>
         </label>
         <ul className="menu">
-          <li>
+        <li className="display-mobile">
             <SearchBar
               onChange={(event) => setQuery(event.target.value)}
               query={query}
@@ -45,7 +46,14 @@ function Navbar() {
           <li>
             <Link to="contact">Contact</Link>
           </li>
+          <li className="display-desktop">
+            <SearchBar
+              onChange={(event) => setQuery(event.target.value)}
+              query={query}
+            />
+          </li>
         </ul>
+        </div>
       </nav>
     </div>
   );

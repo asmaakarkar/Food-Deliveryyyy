@@ -68,33 +68,27 @@ const DishesCard:FC<Dish> =function ({id,name,image_path,description,price}:Dish
               {name}
             </Typography>
             <Typography variant="subtitle1" color="textSecondary">
-              <Link
+              {/* <Link
                 to={{
                   pathname: `/details/${id}`,
                 }}
-              >
+              > */}
                 {description}
-              </Link>
-              <h3>
-                {" "}
-                <span
-                  style={{
-                    float: "left",
-                    fontWeight: "bold",
-                    color: "#bf2222",
-                  }}
-                >
-                  {" "}
-                  Price:{price}
-                </span>
-              </h3>
+              {/* </Link> */}
+              
             </Typography>
-            <span>
+          
+            <div className="price-cart-btn-container">
+                <div className="price-container" > 
+                  Price:{price}
+                </div>
+                <div className="add-to-cart">
               <div className="dish-card">
-            <button className="button js-ripple"></button>
-            <i className="ripple" style={{top: "11px" , left: "13px"}}></i>
+            <button className="button js-ripple"> Order Now
+            <i className="ripple" style={{top: "11px" , left: "13px"}}></i></button>
             </div>
-            </span>
+            </div>
+            </div> 
           </CardContent>
         </div>
       </Card>

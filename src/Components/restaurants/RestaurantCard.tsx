@@ -18,8 +18,10 @@ const RestaurantBox: FC<Restaurant> = function ({
           badgeContent="online"
         ></Badge>
       </span> */}
-      <div className="a-b-img">
+      <div className="a-b-img img-status-container">
         <img src={image_url} alt="" />
+        <span className="restaurant-status active">Online</span>
+          <span className="restaurant-status">Offline</span>
       </div>
       <div></div>
       <div className="a-b-text">

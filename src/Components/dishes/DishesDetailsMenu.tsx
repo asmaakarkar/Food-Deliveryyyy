@@ -80,7 +80,7 @@ function DishesDetailsMenu() {
       <DishesInfo/>
       {isLoading && <div>Loading...</div>}
       {error && <div>Error:{error.message} </div>}
-      <div className="tabs">
+      <div className="tabs" id="restaurant_menu_item">
         <ul className="tabs-titles">{listTitles}</ul>
         <div className="tab-content">{listContent}</div>
       </div>

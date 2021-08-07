@@ -10,8 +10,15 @@ export default function DishesInfo() {
         <Card.Body>
  
         <Row>
-          <Col><Card.Text>This is some text within a card body.</Card.Text></Col>
-         <Col> <Button variant="danger">Go somewhere</Button></Col>
+          <div className="restaurant-menu-tab-header">
+          <Col>
+          <div className="restaurant-name-status">
+          <h3 className="restaurant-name">This is some text within a card body.</h3>
+          <span className="restaurant-status active">Online</span>
+          <span className="restaurant-status">Offline</span>
+          </div>
+          </Col> 
+         </div>
           </Row> 
         </Card.Body>
       </Card>

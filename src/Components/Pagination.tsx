@@ -8,7 +8,7 @@ type Props = Readonly<{
 const Pagination: FC<Props> = function ({ pageCount, onPageChange }: Props) {
   return (
     <div>
-      <div className="pagination">
+      <div className="pagination-container">
         <ReactPaginate
           previousLabel={"← Previous"}
           nextLabel={"Next →"}

@@ -65,10 +65,11 @@ const RestaurantsList: FC<RestaurantsListProps> = () => {
           </p>
           <SearchBar onChange={handlePageChange} />
 
-          <div className="a-container">
+          <div className="a-container"> 
+          <div className="card-container">
             {isSuccess
               ? filteredRestaurants.map((restaurant) => (
-                  <div key={restaurant.id}>
+                  <div className="card-box" key={restaurant.id}>
                     <RestaurantBox
                       street={restaurant.street}
                       image_url={restaurant.image_url}
@@ -78,7 +79,7 @@ const RestaurantsList: FC<RestaurantsListProps> = () => {
                   </div>
                 ))
               : null}
-          </div>
+          </div></div>
           <Pagination pageCount={1000} onPageChange={handlePageClick} />
         </div>
       )}
