@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "ES2016",
+    "declaration": false,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "allowJs": false,
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    // "keyofStringsOnly": true,
+    "lib": [
+      "es2015",
+      "es2017",
+      "dom",
+      "dom.iterable"
+    ],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+  },
+  "include": [
+    "src"
+, "config.ts"  ],
+  "types" : [
+    "core-js"
+  ],
+  "exclude": [
+    "node_modules",
+    
+]
+}
